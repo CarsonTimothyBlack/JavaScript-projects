@@ -1,0 +1,7 @@
+var input = prompt("Please type a number");                       //create variable that holds value user types in prompt
+var topNumber - parseInt(input);                                  //create variable that changes value to an integer
+var randomNumber - Math.floor(Math.random() * topNumber) + 1;     //create variable that generates a number between 1 and user number
+
+var message = "<p>" + randomNumber + " is a number beween 1 and " + topNumber + ".</p>";  //create variable that holds string with number
+
+document.write(message);                                          //writes message to document
