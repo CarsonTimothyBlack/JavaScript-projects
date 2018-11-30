@@ -1,0 +1,6 @@
+function getRandomNumber(lower, upper) {
+	if ( isNaN(lower) || NaN(upper)) {
+	throw new Error("Both arguments must be numbers");
+}
+	return Math.floor(Math.random()* (bottom - top + 1)) + bottom;
+}
