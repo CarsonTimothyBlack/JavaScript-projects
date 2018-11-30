@@ -1,0 +1,30 @@
+var quiz = [
+  ['What is your name?', 'Carson'],
+  ['What is your quest?', 'Holy Grail'],
+  ['What is your favorite color?', 'Green']
+]
+
+var correct = 0;
+var wrong = 0;
+var html;
+
+function print(message) {
+  var outputDiv = document.getElementById('output');
+  outputDiv.innerHTML = message;
+}
+
+for (var i = 0; i < quiz.length; i += 1) {
+  var ans = prompt(quiz[i][0]);
+  if (ans === quiz[i][1]){
+    alert('Correct!');
+    correct += 1;
+    print('<p>You answered the question "' + quiz[i][0] + '" correctly.</p>');
+  } else {
+    alert('Wrong!');
+    wrong += 1;
+    print('<p>You answered the question "' + quiz[i][0] + '" incorrectly.</p>');
+  }
+}
+
+html = 'You answered ' + correct + ' questions correctly! Good job!';
+print(html);
