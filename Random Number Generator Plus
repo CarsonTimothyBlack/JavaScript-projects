@@ -1,0 +1,11 @@
+var input1 = prompt("Please type a starting number");           //Variable stores user's first number
+var bottomNumber = parseInt(input1);                            //Variable updates user's first number to an integer
+
+var input = prompt("Please type a number");                     //Variable stores user's next number
+var topNumber - parseInt(input);                                //Variable updates user's next number to an integer
+
+var randomNumber - Math.floor(Math.random() * (topNumber - bottomNumber + 1)) + bottomNumber;   //variable generates random number
+
+var message = "<p>" + randomNumber + " is a number between " + bottomNumber +  " and  " + topNumber + ".</p>";    //Creates message
+
+document.write(message);    //Writes message to document
